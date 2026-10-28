@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reservation Confirmed</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        180deg,
+        #F8F4EE,
+        #EFE7DF
+    );
+    padding:30px;
+}
+
+.card{
+
+    max-width:700px;
+    width:100%;
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+    animation:fadeIn 1.5s ease;
+}
+
+.small{
+
+    letter-spacing:4px;
+
+    color:#B0957A;
+
+    font-family:'Inter',sans-serif;
+
+    margin-bottom:20px;
+}
+
+h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:70px;
+
+    color:#4F3F35;
+
+    margin-bottom:20px;
+}
+
+p{
+
+    font-family:'Inter',sans-serif;
+
+    color:#74675D;
+
+    margin:12px 0;
+
+    font-size:18px;
+}
+
+.success{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:45px;
+    }
+
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 38px;
+    background:#D8C3A5;
+    color:#4F3F35;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:#CDB393;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="buttons">
+
+    <a href="confirmed.html" class="btn">
+        Yes 🤍
+    </a>
+
+    <a href="confirmed.html" class="btn">
+        Fucking Yes! ✨
+    </a>
+
+</div>
+
+<div class="card">
+
+    <div class="success">🎉</div>
+
+    <div class="small">
+        RESERVATION CONFIRMED
+    </div>
+
+    <h1>It's A Date</h1>
+
+    <p>📅 November 14</p>
+
+    <p>🕗 8:00 PM</p>
+
+    <p>📍 Frankie's Italian Kitchen</p>
+
+    <br>
+
+    <p>
+        Great food, Great Great Company and a Sexy Date 🤍
+    </p>
+
+</div>
+
+</body>
+</html>

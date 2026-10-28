@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Few Favourite Frames</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(
+        180deg,
+        #f8f4ee 0%,
+        #f2ebe3 100%
+    );
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:Georgia, serif;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    text-align:center;
+}
+
+h1{
+    font-size:70px;
+    color:#5A463C;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    color:#8d7a6d;
+    margin-bottom:40px;
+    letter-spacing:2px;
+}
+
+.slider{
+
+    position:relative;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:30px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
+
+.slider img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+}
+
+.caption{
+    margin-top:25px;
+}
+
+.caption h2{
+    color:#5A463C;
+    font-size:40px;
+}
+
+.caption p{
+    color:#7a695d;
+    margin-top:10px;
+}
+
+.controls{
+    margin-top:30px;
+}
+
+button{
+
+    background:#d9c5ab;
+
+    border:none;
+
+    padding:15px 20px;
+
+    margin:10px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:#5A463C;
+
+    font-size:18px;
+}
+
+.next-page{
+    margin-top:50px;
+}
+
+.next-page a{
+
+    text-decoration:none;
+
+    background:white;
+
+    color:#5A463C;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+@media screen and (max-width:768px){
+
+    .slider img{
+        height:400px;
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    h1{
+        font-size:45px !important;
+    }
+
+    h2{
+        font-size:32px !important;
+    }
+
+    p{
+        font-size:16px !important;
+        line-height:1.8;
+    }
+
+    .card,
+    .container{
+        width:100%;
+        padding:25px;
+    }
+
+    .buttons{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .buttons button,
+    .btn{
+        font-size:14px;
+        padding:12px 18px;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>A Few Favourite Frames</h1>
+
+    <div class="subtitle">
+        Some moments were too good not to feature.
+    </div>
+
+    <div class="slider">
+
+        <img id="slide" src="./Images/birthday1.jpeg">
+
+        <div class="caption">
+
+            <h2 id="title">
+                Effortlessly Photogenic
+            </h2>
+
+            <p id="description">
+                Some moments deserve the spotlight.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="controls">
+        <button onclick="previousSlide()">← Previous</button>
+        <button onclick="nextSlide()">Next →</button>
+    </div>
+
+    <div class="next-page">
+        <a href="surprise.html">
+            One Last Surprise ✨
+        </a>
+    </div>
+
+</div>
+
+<script>
+
+const slides = [
+
+{
+image:"./Images/birthday1.jpeg",
+title:"Effortlessly Photogenic",
+text:"Some moments deserve the spotlight."
+},
+
+{
+image:"./Images/birthday3.jpeg",
+title:"Curated Highlight",
+text:"A personal favourite for obvious reasons."
+},
+
+{
+image:"./Images/birthda2.jpeg",
+title:"Worth Remembering",
+text:"One of those photos you keep coming back to."
+}
+
+];
+
+let current = 0;
+
+function showSlide(){
+
+document.getElementById("slide").src =
+slides[current].image;
+
+document.getElementById("title").innerHTML =
+slides[current].title;
+
+document.getElementById("description").innerHTML =
+slides[current].text;
+
+}
+
+function nextSlide(){
+
+current++;
+
+if(current >= slides.length){
+current = 0;
+}
+
+showSlide();
+
+}
+
+function previousSlide(){
+
+current--;
+
+if(current < 0){
+current = slides.length - 1;
+}
+
+showSlide();
+
+}
+
+setInterval(nextSlide,5000);
+
+</script>
+

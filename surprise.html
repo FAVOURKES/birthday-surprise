@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>One Last Thing...</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(
+        180deg,
+        #F8F4EE 0%,
+        #EFE7DF 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.container{
+    text-align:center;
+    max-width:900px;
+}
+
+.small-text{
+    font-family:'Inter',sans-serif;
+    letter-spacing:4px;
+    color:#9A8470;
+    margin-bottom:20px;
+}
+
+h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:90px;
+    color:#4F3F35;
+    margin-bottom:30px;
+}
+
+.message{
+    font-family:'Inter',sans-serif;
+    font-size:20px;
+    line-height:1.8;
+    color:#76675B;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:50px;
+    padding:18px 40px;
+    text-decoration:none;
+    background:white;
+    color:#4F3F35;
+    border-radius:50px;
+    font-family:'Inter',sans-serif;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:55px;
+    }
+
+    .message{
+        font-size:18px;
+    }
+
+}
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    h1{
+        font-size:45px !important;
+    }
+
+    h2{
+        font-size:32px !important;
+    }
+
+    p{
+        font-size:16px !important;
+        line-height:1.8;
+    }
+
+    .card,
+    .container{
+        width:100%;
+        padding:25px;
+    }
+
+    .buttons{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .buttons button,
+    .btn{
+        font-size:14px;
+        padding:12px 18px;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="small-text">
+        ONE LAST THING...
+    </div>
+
+    <h1>I Have A Confession</h1>
+
+    <p class="message">
+
+        Planning this was a lot harder than sending a regular birthday text.
+
+        <br><br>
+
+        But I thought your birthday deserved a little more effort than a simple "Happy Birthday".
+
+        <br><br>
+
+        So before we finish this little birthday experience...
+
+        <br><br>
+
+        There's one final surprise waiting for you.
+
+    </p>
+
+    <a href="reservation.html" class="btn">
+        Unwrap Your Final Gift 🎁
+    </a>
+
+</div>
+

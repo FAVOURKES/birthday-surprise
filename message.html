@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Note For You</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F7F3EE;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.container{
+    max-width:850px;
+    text-align:center;
+}
+
+h1{
+    font-family:'Parisienne', cursive;
+    font-size:100px;
+    color:#8C6A52;
+    margin-bottom:40px;
+}
+
+p{
+    font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    line-height:1.8;
+    color:#5F5045;
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:50px;
+
+    padding:18px 45px;
+
+    background:#D8C3A5;
+
+    color:#4B3A31;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:28px;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:#CEB596;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:65px;
+    }
+
+    p{
+        font-size:26px;
+    }
+
+}
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    h1{
+        font-size:45px !important;
+    }
+
+    h2{
+        font-size:32px !important;
+    }
+
+    p{
+        font-size:16px !important;
+        line-height:1.8;
+    }
+
+    .card,
+    .container{
+        width:100%;
+        padding:25px;
+    }
+
+    .buttons{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .buttons button,
+    .btn{
+        font-size:14px;
+        padding:12px 18px;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Before We Continue...</h1>
+
+    <p>
+
+        Happy Birthday 
+
+        <br><br>
+
+        I was going to send you a simple birthday message.
+
+        <br><br>
+
+        Then somehow it turned into this entire website...
+
+        <br><br>
+
+        Honestly, I'm blaming you.
+
+        <br><br>
+
+        You're funny, easy to talk to, and somehow managed to become one of my favourite notifications.
+
+        <br><br>
+
+        We've only recently started getting to know each other, but getting to know you has genuinely been one of the nicest surprises of my year so far.
+
+        <br><br>
+
+        So instead of sending a regular birthday text like a normal person...
+
+        <br><br>
+
+        I thought I'd do something a little extra.
+
+        <br><br>
+
+        Consider this my attempt at making you smile today 🤍
+
+    </p>
+
+    <a href="gallery.html" class="btn">
+        Continue →
+    </a>
+
+</div>
+
+</body>
+</html>
